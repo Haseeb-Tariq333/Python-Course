@@ -5,3 +5,4 @@ class MyClass:
 x = MyClass() 
 print (x.i)
 print (x.f())
+

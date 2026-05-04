@@ -14,3 +14,21 @@ class Programmer(Employee):
 b = Programmer("Ali", "400")
 b.language()
 ## This is just a basic demonstration of how inheritance works ##
+
+## Access Modifiers ##
+class People:
+    def __init__(self):
+        self.name = "Haseeb"
+a = People()
+print(a.name)
+##  We see that this block of code were correctly and the name variable was accessed from the class directly
+##  so this type is called public
+
+class Student:
+    def __init__(self):
+        self.__name = "Haseeb" ## In self.__name the "2 undersocres" indicate that this variable is private 
+a = Student()
+# print(a.__name)   ## This is not going to work because the name cant be accessed directly 
+# Private variales can be accessed indirectly by usig the following methos
+print(a._Student__name) ## This is called "name mangling"
+
